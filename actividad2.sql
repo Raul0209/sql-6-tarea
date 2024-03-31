@@ -5,7 +5,8 @@ CREATE TABLE Clientes (
     ClienteID INT PRIMARY KEY AUTO_INCREMENT,
     Nombre VARCHAR(50),
     Email VARCHAR(50),
-    Telefono VARCHAR(15)
+    Telefono VARCHAR(15),
+    Apellido VARCHAR(15)
 );
 
 CREATE TABLE Productos (
@@ -71,7 +72,6 @@ END;
 
 # Insertamos datos para Cliente
 
-CALL InsertarCliente('Byron Gomez','byraul0209@gmail.com', '3574-5525');
 CALL InsertarCliente('Raul Arango','rarango@gmail.com', '5509-8566');
 CALL InsertarCliente('Andrea Godinez','agodinez@gmail.com', '3317-9824');
 CALL InsertarCliente('Manuela Perez','aperez@gmail.com', '3312-5698');
@@ -80,7 +80,6 @@ CALL InsertarCliente('Josue Pereira','jpereira@gmail.com', '5534-7854');
 
 # Actualizamos datos para cliente
 
-CALL ActualizarCliente(1,'Byron Gomez 1','byraul0209@gmail.com', '3574-5525');
 CALL ActualizarCliente(2,'Raul Arango 1','rarango@gmail.com', '5509-8566');
 CALL ActualizarCliente(3,'Andrea Godinez 1','agodinez@gmail.com', '3317-9824');
 CALL ActualizarCliente(4,'Manuela Perez 1','aperez@gmail.com', '3312-5698');
